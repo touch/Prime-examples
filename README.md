@@ -1,4 +1,4 @@
 Prime-examples
 ==============
 
-What does this button dooo?
+a collection of useful prime examples
