@@ -1,0 +1,8 @@
+-cp src
+-lib prime-fsm
+-lib prime-signals
+-lib prime-core
+-swf bin/fsm.swf
+-swf-header 800:600:30:FFFFFF
+-swf-version 10.1
+-main Main
