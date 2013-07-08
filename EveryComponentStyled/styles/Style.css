@@ -1,0 +1,54 @@
+@import url('BasicStyle.css');
+@manifest url('Style.xml');
+
+#TestContainer {
+	algorithm: dynamic-tile( left, top );
+	background: linear-gradient(90deg, #FFFFFF, #dddddd);
+	margin: 10px;
+	width: 100%;
+	height: 100%;
+	/*border:10px solid #4D4D4D;*/
+}
+
+#ButtonLabelSkin {
+	skin: Class( prime.gui.components.skins.ButtonLabelSkin );
+	border: 1px solid #4D4D4D;
+	text-align: center;
+	margin:2px;
+	
+	
+}
+
+#ButtonLabelSkinTextField {
+	background: #ff0000;
+	color: #ff0000; 
+	border: 1px solid #ff0000;
+	width:100%;
+	height:100%;
+}
+
+
+#ButtonLabelSkin UITextField {
+	background: #ff0000;
+	color: #ff0000;
+	border: 1px solid #ff0000;
+	width:100%;
+	height:100%;
+}
+
+UITextField {
+	background: #ff0000;
+	color: #ff0000;
+	border: 1px solid #ff0000;
+	width:100%;
+	height:100%;
+}
+
+#ButtonIconSkin {
+	skin: Class( prime.gui.components.skins.ButtonIconSkin );
+	border: 1px solid #4D4D4D;
+	text-align: center;
+	margin:2px;
+}
+
+Button:hover { opacity: 0.5; }

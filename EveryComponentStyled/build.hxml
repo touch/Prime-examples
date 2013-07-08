@@ -1,0 +1,19 @@
+
+-lib prime-core
+-lib prime-components
+-lib prime-layout
+-lib prime-bindable
+-lib prime-signals
+-lib prime-fsm
+-lib prime-data
+-lib prime-display
+-lib prime-css
+-cp styles
+
+--macro PrimeCSS.buildstyles()
+
+-main Main
+#-swf test.swf
+-swf-header 1320:700:31:FFFFFF
+
+-cp styles
