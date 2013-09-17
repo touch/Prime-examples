@@ -1,0 +1,10 @@
+-cp src
+-lib prime
+-lib feffects
+-lib prime-components
+-swf bin/Examplereorderbuttons.swf
+-swf-header 800:600:30:FFFFFF
+-swf-version 10.1
+-main SortMain
+--macro PrimeCSS.buildstyles('styles')
+-cp styles

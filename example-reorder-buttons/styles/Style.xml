@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<componentPackage>
+	
+	<component id="SortMain"					superClass="UIWindow"			fullname="SortMain" />
+	
+<!--<component id=""	superClass=""	fullname="" />-->
+</componentPackage>
