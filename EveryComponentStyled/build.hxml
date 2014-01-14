@@ -1,4 +1,5 @@
 
+-lib feffects
 -lib prime-core
 -lib prime-components
 -lib prime-layout
@@ -13,7 +14,6 @@
 --macro PrimeCSS.buildstyles()
 
 -main Main
-#-swf test.swf
+-swf test.swf
 -swf-header 1320:700:31:FFFFFF
-
--cp styles
+-swf-version 10.2
