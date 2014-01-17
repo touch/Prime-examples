@@ -1,0 +1,112 @@
+@import url('BasicStyle.css');
+@manifest url('Style.xml');
+
+UIWindow {
+	algorithm: dynamic-tile( left, top );
+	background: linear-gradient(90deg, #FFFFFF, #dddddd);
+	margin: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+#URIIcon {
+	skin: Class( prime.gui.components.skins.ButtonIconLabelSkin );
+	icon: url( "assets/test_asset_1.png" );
+}
+
+#ClassIconA {
+	skin: Class( prime.gui.components.skins.ButtonIconLabelSkin );
+	icon: Class( TestAsset2 );
+}
+
+#ClassIconB {
+	skin: Class( prime.gui.components.skins.ButtonIconLabelSkin );
+	icon: Class( TestAsset3 );
+}
+
+Button {
+	border: 1px solid #4D4D4D;
+	text-align: center;
+	margin:5px;
+}
+Button:hover { opacity: 0.5; }
+
+
+/*
+ * Perceptor
+ */
+/*UIContainer*/
+#Inspector {
+	algorithm: float-hor(left, top);
+	background: #ff0000;
+	width: 100%;
+	height: 100%;
+	overflow:drag-scroll;
+}
+
+/*TreeComponent*/
+.InspectorTreeComponentRoot {
+	algorithm: float-ver(top, left);
+	background: #00ff00;
+	width: 50%;
+	/*height: 90%;*/
+	overflow:drag-scroll;
+	margin-left: 5px;
+	overflow:drag-scroll;
+}
+/*TreeComponent*/
+.InspectorTreeComponent {
+	algorithm: float-ver(top, left);
+	background: #0000ff;
+	/*width: 100%;*/
+	/*height: 90%;*/
+	/*overflow:drag-scroll;*/
+	margin-left: 5px;
+}
+
+/*Label*/
+.InspectorTreeLabel {
+	algorithm: float-ver(center, left);
+	background: #00ffff;
+	max-height: 40px;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*UIDataContainer*/
+.InspectorTreeContainer {
+	algorithm: float-ver(top, left);
+	background: #0000ff;
+}
+
+/*LiveView*/
+#InspectorData {
+	algorithm: float-ver(center, center);
+	background: #ffff00;
+	width: 50%;
+	height: 95%;
+	overflow:scrollbars;
+	max-height:9000px;
+}
+
+/*UIDataContainer*/
+#InspectorDataContainer {
+	algorithm: float-hor(left, center);
+	background: #ff00ff;
+	width: 100%;
+	min-height: 40px;
+	max-height:9000px;
+}
+
+/*Label*/
+#InspectorDataLabel {
+	background: #f0f0f0;
+	width: 100%;
+	min-height: 30px;
+}
+
+#InspectorDataLabel :hover {
+	background: #7cb006
+	box-glow: 12px 12px 1.8 #ffffff99 high;
+}

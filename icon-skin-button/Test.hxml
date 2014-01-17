@@ -1,0 +1,19 @@
+-cp ../../Editor/Prime/prime-core/src
+-cp ../../Editor/Prime/prime-signals/src
+-cp ../../Editor/Prime/prime-bindable/src
+-cp ../../Editor/Prime/prime-data/src
+-cp ../../Editor/Prime/prime-locale/src
+-cp ../../Editor/Prime/prime-fsm/src
+-cp ../../Editor/Prime/prime-mvc/src
+-cp ../../Editor/Prime/prime-display/src
+-cp ../../Editor/Prime/prime-layout/src
+-cp ../../Editor/Prime/prime-media/src
+-cp ../../Editor/Prime/prime-components/src
+-cp ../../Editor/Prime/prime-css/src
+-cp ../../Editor/Prime/prime-perceptor/src
+-swf test.swf
+-swf-header 1320:700:31:FFFFFF
+--flash-strict
+-swf-version 10.2
+-main Main
+build_base.hxml

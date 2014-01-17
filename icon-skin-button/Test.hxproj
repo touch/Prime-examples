@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="Application" />
+    <movie input="" />
+    <movie path="test.swf" />
+    <movie fps="31" />
+    <movie width="1320" />
+    <movie height="700" />
+    <movie version="10" />
+    <movie minorVersion="2" />
+    <movie platform="Flash Player" />
+    <movie background="#FFFFFF" />
+    <movie preferredSDK="Haxe 3.0.0;3.0.0;" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="..\..\Editor\Prime\prime-core\src" />
+    <class path="..\..\Editor\Prime\prime-signals\src" />
+    <class path="..\..\Editor\Prime\prime-bindable\src" />
+    <class path="..\..\Editor\Prime\prime-data\src" />
+    <class path="..\..\Editor\Prime\prime-locale\src" />
+    <class path="..\..\Editor\Prime\prime-fsm\src" />
+    <class path="..\..\Editor\Prime\prime-mvc\src" />
+    <class path="..\..\Editor\Prime\prime-display\src" />
+    <class path="..\..\Editor\Prime\prime-layout\src" />
+    <class path="..\..\Editor\Prime\prime-media\src" />
+    <class path="..\..\Editor\Prime\prime-components\src" />
+    <class path="..\..\Editor\Prime\prime-css\src" />
+    <class path="..\..\Editor\Prime\prime-perceptor\src" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option directives="" />
+    <option flashStrict="True" />
+    <option noInlineOnDebug="False" />
+    <option mainClass="Main" />
+    <option enabledebug="True" />
+    <option additional="build_base.hxml" />
+  </build>
+  <!-- haxelib libraries -->
+  <haxelib>
+    <!-- example: <library name="..." /> -->
+  </haxelib>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="Main.hx" />
+  </compileTargets>
+  <!-- Assets to embed into the output SWF -->
+  <library>
+    <!-- example: <asset path="..." id="..." update="..." glyphs="..." mode="..." place="..." sharepoint="..." /> -->
+  </library>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand />
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="True" />
+    <option testMovie="ExternalPlayer" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>

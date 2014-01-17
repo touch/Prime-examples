@@ -1,0 +1,66 @@
+
+#---------------------------------------------------------------------
+# If you are extending UIWindow and overriding UIWindow::createChildren, you must
+# call super.createChildren(); in conjunction with using the following build options.
+# The following four lines are needed for the CSS/UI debugger to be embedded
+
+-lib prime-perceptor
+-D embed_perceptor
+-D debug
+-D dragEnabled
+
+#---------------------------------------------------------------------
+
+#---------------------------------------------------------------------
+# The following options are needed to place breakpoints and step through
+# the prime codebase, if using FlashDevelop. FlashDevelop may also need
+# these paths 
+#
+-cp ../../Editor/Prime/prime-core/src 
+-cp ../../Editor/Prime/prime-signals/src
+-cp ../../Editor/Prime/prime-bindable/src 
+-cp ../../Editor/Prime/prime-data/src 
+-cp ../../Editor/Prime/prime-locale/src 
+-cp ../../Editor/Prime/prime-fsm/src 
+-cp ../../Editor/Prime/prime-mvc/src
+-cp ../../Editor/Prime/prime-display/src 
+-cp ../../Editor/Prime/prime-layout/src 
+-cp ../../Editor/Prime/prime-media/src 
+-cp ../../Editor/Prime/prime-components/src 
+-cp ../../Editor/Prime/prime-css/src 
+-cp ../../Editor/Prime/prime-perceptor/src 
+
+-D prime_perceptor
+-D prime_core
+-D prime_signals
+-D prime_bindable
+-D prime_data
+-D prime_locale
+-D prime_fsm
+-D prime_mvc
+-D prime_display
+-D prime_layout
+-D prime_media
+-D prime_components
+-D prime_css
+
+#---------------------------------------------------------------------
+
+-D fdb 
+-debug 
+
+-lib feffects
+-lib prime-core
+-lib prime-components
+-lib prime-layout
+-lib prime-bindable
+-lib prime-signals
+-lib prime-fsm
+-lib prime-data
+-lib prime-display
+-lib prime-css
+
+-cp styles
+--macro PrimeCSS.buildstyles('./styles')
+
+-swf-lib styles/Assets.swf
