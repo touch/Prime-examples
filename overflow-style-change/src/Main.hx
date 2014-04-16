@@ -35,10 +35,10 @@ class Main extends UIWindow
 
 
 		parent.attach( child );
-		//m.attach(parent);
+		m.attach(parent);
 		attach( parent );
 
-		toggleStyles.bind(child) .on( child.userEvents.mouse.click, this );
+		toggleStyles.bind(parent) .on( parent.userEvents.mouse.click, this );
 		on = true;
 		toggleStyles(parent);
 	}
