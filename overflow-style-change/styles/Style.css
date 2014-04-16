@@ -1,0 +1,29 @@
+@import url('BasicStyle.css');
+@manifest url('Style.xml');
+
+/*
+UIWindow {
+	allgorithm: float-hor;
+	width:  400px;
+	}*/
+
+#parent     { 
+	algorithm: float-hor; 
+	width:  400px;
+	height:  400px;
+	overflow:  scroll-mouse-move;
+}
+
+#child     { 
+	background: linear-gradient(45deg, #ff0000, #0000ff);
+	width:  800px;
+	height:  800px;
+}
+
+.zoomed {
+	overflow:  scroll-mouse-move;
+}
+
+.unzoomed {
+	overflow: visible;
+}

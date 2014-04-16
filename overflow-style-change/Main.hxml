@@ -1,0 +1,27 @@
+
+-lib prime
+-lib feffects
+-lib prime-components
+-lib prime-css
+-lib prime-core
+-lib prime-components
+-lib prime-layout
+-lib prime-bindable
+-lib prime-signals
+-lib prime-fsm
+-lib prime-data
+-lib prime-display
+-cp src
+
+
+-lib prime-perceptor
+-D embed_perceptor
+-D debug
+-D dragEnabled
+
+-swf Test.swf
+-swf-header 800:600:30:FFFFFF
+-swf-version 10.2
+-main Main
+--macro PrimeCSS.buildstyles('styles')
+-cp styles
