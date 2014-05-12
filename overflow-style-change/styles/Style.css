@@ -1,26 +1,31 @@
 @import url('BasicStyle.css');
 @manifest url('Style.xml');
 
-/*
-UIWindow {
-	allgorithm: float-hor;
-	width:  400px;
-	}*/
 
-#proxy { 
-	algorithm: float-ver(center, center); 
+UIWindow {
+	algorithm: float-hor(center, center); 
 	width:  100%;
 	height:  100%;
+	
+	background: #a0a0a0;
+}
+
+#proxy { 
+	algorithm: float-hor(center, center); 
+	width:  500px;
+	height:  500px;
+	background: #000000;
 }	
 	
 #parent     { 
-	algorithm: float-ver(center, center); 
+	algorithm: float-hor(center, center); 
 	width:  400px;
 	height:  400px;
 }
 
 #child     { 
 	background: linear-gradient(45deg, #ff0000, #0000ff);
+	/*background-image: url( "./NumberedGrid1.jpg" );*/
 	width:  800px;
 	height:  800px;
 }
